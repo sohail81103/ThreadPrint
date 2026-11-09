@@ -61,6 +61,7 @@ The server acts as the producer of print jobs, while worker threads act as consu
 Workers wait for new jobs using a condition variable rather than continuously polling the queue.
 
 The queue mutex protects shared queue operations, ensuring that multiple workers can safely retrieve jobs.
+Multiple clients can submit jobs to the server. In the current implementation, client connections are handled sequentially, while submitted jobs are processed concurrently by the worker thread pool.
 
 ## Technology Stack
 
