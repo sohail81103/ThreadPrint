@@ -111,7 +111,7 @@ The current socket implementation targets macOS and other POSIX-compatible syste
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ThreadPrint.git
+git clone https://github.com/sohail81103/ThreadPrint.git
 cd ThreadPrint
 ```
 
